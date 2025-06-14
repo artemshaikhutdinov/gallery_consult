@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box; /*don't let the box stretch if a border get some parameter, it remains in the size of the box*/
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #efefef;
+}
+
+/*connection of the font-family. not work till we apply it to an element*/
+@font-face {
+  font-family: Roboto;
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 2px;
+  padding: 50px;
+  margin: auto;
+  width: 70%;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 48px;
+  text-align: center;
+  width: 100%; /*put the text to the center and not mix it with the images*/
+}
+
+.photo {
+  width: 45%;
+  aspect-ratio: 16 / 9; /*Bildseitenformat*/
+  background-color: orange;
+  background-size: cover; /*background does stretch for the whole size of the box*/
+  background-repeat: no-repeat; /*background doesn't repeat*/
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 2px; /*creates shadow around the box*/
+  transition: all 0.9s ease;
+  margin: 20px;
+  background-position: center center;
+  border-radius: 15px;
+}
+
+.photo:hover {
+  transform: scale(1.5) rotate(6deg);
+}
+
+.photo1 {
+  background-image: url(/img/img1.jpeg);
+}
+
+.photo2 {
+  background-image: url(/img/img2.jpeg);
+}
+.photo3 {
+  background-image: url(/img/img3.jpeg);
+}
+.photo4 {
+  background-image: url(/img/img4.jpeg);
+}
+.photo5 {
+  background-image: url(/img/img5.jpeg);
+}
+.photo6 {
+  background-image: url(/img/img6.jpeg);
+}
+.photo7 {
+  background-image: url(/img/img7.jpeg);
+}
+.photo8 {
+  background-image: url(/img/img8.jpeg);
+}
+.photo9 {
+  background-image: url(/img/img9.jpeg);
+}
+.photo10 {
+  background-image: url(/img/img10.jpeg);
+}
+.photo11 {
+  background-image: url(/img/img11.jpg);
+}
+.photo12 {
+  background-image: url(/img/img12.jpeg);
+}
